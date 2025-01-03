@@ -52,259 +52,259 @@ proxies:
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
   - name: 香港2
     port: 58002
     server: lczx-hk01.bzlxzl.com
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
   - name: 香港3
     port: 58003
     server: lczx-hk01.bzlxzl.com
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
   - name: 香港4
     port: 58004
     server: lczx-hk01.bzlxzl.com
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
   - name: 香港5
     port: 58005
     server: lczx-hk01.bzlxzl.com
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
   - name: 台湾1
     port: 58011
     server: lczx-tw01.bzlxzl.com
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
   - name: 台湾2
     port: 58012
     server: lczx-tw02.bzlxzl.com
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
   - name: 台湾3
     port: 58013
     server: lczx-tw03.bzlxzl.com
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
   - name: 台湾4
     port: 58014
     server: lczx-tw04.bzlxzl.com
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
   - name: 台湾5
     port: 58015
     server: lczx-tw05.bzlxzl.com
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
   - name: 日本1
     port: 58021
     server: lczx-hk01.bzlxzl.com
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
   - name: 日本2
     port: 58022
     server: lczx-hk01.bzlxzl.com
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
   - name: 日本3
     port: 58023
     server: lczx-hk01.bzlxzl.com
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
   - name: 日本4
     port: 58024
     server: lczx-hk01.bzlxzl.com
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
   - name: 日本5
     port: 58025
     server: lczx-hk01.bzlxzl.com
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
   - name: 新加坡1
     port: 58041
     server: lczx-hk01.bzlxzl.com
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
   - name: 新加坡2
     port: 58042
     server: lczx-hk01.bzlxzl.com
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
   - name: 新加坡3
     port: 58043
     server: lczx-hk01.bzlxzl.com
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
   - name: 新加坡4
     port: 58044
     server: lczx-hk01.bzlxzl.com
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
   - name: 新加坡5
     port: 58045
     server: lczx-hk01.bzlxzl.com
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
   - name: 韩国1
     port: 58051
     server: lczx-hk01.bzlxzl.com
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
   - name: 韩国2
     port: 58052
     server: lczx-hk01.bzlxzl.com
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
   - name: 美国1
     port: 58032
     server: lczx-hk01.bzlxzl.com
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
   - name: 美国2
     port: 58032
     server: lczx-hk01.bzlxzl.com
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
   - name: 美国3
     port: 58033
     server: lczx-hk01.bzlxzl.com
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
   - name: 美国4
     port: 58034
     server: lczx-hk01.bzlxzl.com
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
   - name: 美国05
     port: 58035
     server: lczx-hk01.bzlxzl.com
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
   - name: 俄罗斯
     port: 58056
     server: lczx-hk01.bzlxzl.com
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
   - name: 法国
     port: 58058
     server: lczx-hk01.bzlxzl.com
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
   - name: 德国
     port: 58062
     server: lczx-hk01.bzlxzl.com
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
   - name: 阿根廷
     port: 58064
     server: lczx-hk01.bzlxzl.com
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
   - name: 印度
     port: 58056
     server: lczx-hk01.bzlxzl.com
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
   - name: 菲律宾
     port: 58056
     server: lczx-hk01.bzlxzl.com
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
   - name: 泰国
     port: 58070
     server: lczx-hk01.bzlxzl.com
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
   - name: 越南
     port: 58072
     server: lczx-hk01.bzlxzl.com
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
   - name: 土耳其
     port: 58074
     server: lczx-hk01.bzlxzl.com
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
   - name: 加拿大
     port: 58076
     server: lczx-hk01.bzlxzl.com
     type: vless
     network: ws
     udp: true
-    uuid: ef644fd6-fed0-4c5e-a568-e714a5b5cd1e
+    uuid: f87358c1-e9de-475b-b217-e168b3a2a072
 proxy-groups:
   - name: 🚀 节点选择
     type: select
