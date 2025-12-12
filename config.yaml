@@ -1,0 +1,73 @@
+# clash_proxy_from_pac.yaml
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: Rule
+log-level: info
+
+proxies:
+  - name: "HK-Proxy-5443"
+    type: http
+    server: c778d84f-t7aao0-te5mka-ai0d.hk.wkuaishou.com
+    port: 5443
+    username: "1766159075@489901"
+    password: "e5c8711c83d35280bfa8fcfd6ca6b7a0"
+    tls: true
+
+  - name: "MI-Proxy-443"
+    type: http
+    server: e12dc695-t7aao0-te5mka-ai0d.mi-imgs.com
+    port: 443
+    username: "1766159075@489901"
+    password: "e5c8711c83d35280bfa8fcfd6ca6b7a0"
+    tls: true
+
+  - name: "SEA-Proxy-443"
+    type: http
+    server: a8a7715a-t7aao0-te5mka-ai0d.sea.cdntoutiao.com
+    port: 443
+    username: "1766159075@489901"
+    password: "e5c8711c83d35280bfa8fcfd6ca6b7a0"
+    tls: true
+
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - HK-Proxy-5443
+      - MI-Proxy-443
+      - SEA-Proxy-443
+
+rules:
+  # 直连列表（从 PAC 中提取的 DIRECT 域名）
+  - DOMAIN-SUFFIX,msn.cn,DIRECT
+  - DOMAIN-SUFFIX,cn.bing.com,DIRECT
+  - DOMAIN-SUFFIX,cn.mm.bing.net,DIRECT
+  - DOMAIN-SUFFIX,ip138.com,DIRECT
+  - DOMAIN-SUFFIX,alipay.com,DIRECT
+  - DOMAIN-SUFFIX,alipayplus.com,DIRECT
+  - DOMAIN-SUFFIX,wooshpay.com,DIRECT
+  - DOMAIN-SUFFIX,tenpay.com,DIRECT
+  - DOMAIN-SUFFIX,95516.com,DIRECT
+  - DOMAIN-SUFFIX,paypal.com,DIRECT
+  - DOMAIN-SUFFIX,stripe.com,DIRECT
+  - DOMAIN-SUFFIX,payssion.com,DIRECT
+  - DOMAIN-SUFFIX,136data.com,DIRECT
+  - DOMAIN-SUFFIX,4fk9.com,DIRECT
+  - DOMAIN-SUFFIX,taintedge.com,DIRECT
+  - DOMAIN-SUFFIX,y62i.com,DIRECT
+  - DOMAIN-SUFFIX,fromusaforchn.com,DIRECT
+  - DOMAIN-SUFFIX,webstoreconsole.com,DIRECT
+  - DOMAIN-SUFFIX,monsnssdk.com,DIRECT
+  - DOMAIN-SUFFIX,cdnfeishu.com,DIRECT
+  - DOMAIN-SUFFIX,microsoft.com,DIRECT
+  - DOMAIN-SUFFIX,bing.com,DIRECT
+  - DOMAIN-SUFFIX,live.com,DIRECT
+  - DOMAIN-SUFFIX,azure.com,DIRECT
+  - DOMAIN-SUFFIX,windows.com,DIRECT
+  - DOMAIN-SUFFIX,msn.com,DIRECT
+  - DOMAIN-SUFFIX,ip.sb,DIRECT
+  # ... 可继续补充其他 DIRECT 域名
+
+  # 默认走代理
+  - MATCH,🚀 节点选择
