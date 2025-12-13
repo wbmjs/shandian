@@ -1,0 +1,39 @@
+name: 🔄 Auto Update Clash Config
+
+on:
+  # 每天 UTC 0:00 触发（即北京时间 8:00）
+  schedule:
+    - cron: '0 0 * * *'
+  # 允许在 Actions 页面手动运行
+  workflow_dispatch:
+
+jobs:
+  update-clash-config:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛎️ Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 🌐 Fetch Clash config from Railway
+        run: |
+          echo "Fetching Clash config from Railway..."
+          curl -f -s -o clash_auto.yaml "https://wyx-production.up.railway.app/clash"
+          if [ ! -s clash_auto.yaml ]; then
+            echo "❌ Error: Empty or invalid response from Railway"
+            exit 1
+          fi
+          echo "✅ Config fetched successfully"
+
+      - name: 📤 Commit and push if changed
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add clash_auto.yaml
+          # Only commit if there are changes
+          if ! git diff --staged --quiet; then
+            git commit -m "🔄 Auto-update Clash config [$(date -u)]"
+            git push
+            echo "✅ Changes pushed"
+          else
+            echo "ℹ️ No changes detected"
+          fi
