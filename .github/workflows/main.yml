@@ -1,40 +1,60 @@
-name: 🔄 Auto Update Clash Config
+name: Auto Update Clash Config
 
 on:
-  # 每天 UTC 0:00 触发（北京时间 8:00）
   schedule:
-    - cron: '0 0 * * *'
-  # 允许手动触发（方便测试）
-  workflow_dispatch:
+    # 每 6 小时运行一次（UTC）
+    - cron: '0 */6 * * *'
+  workflow_dispatch:  # 允许手动触发
 
 jobs:
   update-clash-config:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write  # 必须！允许 git push
+
     steps:
-      - name: 🛎️ Checkout repository
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: 🌐 Fetch Clash config from Railway (with retries)
+      - name: Wake up Render service
         run: |
-          echo "➡️ Attempting to fetch config from Railway..."
-          max_retries=3
-          retry=0
-          while [ $retry -lt $max_retries ]; do
-            echo "  🔄 Attempt $((retry + 1))..."
-            if curl -f -s --max-time 30 -o clash_auto.yaml "https://wyx.onrender.com/clash"; then
-              # 检查是否是有效的 Clash YAML（必须包含 proxies）
-              if grep -q "^proxies:" clash_auto.yaml; then
-                echo "✅ Valid Clash config received"
-                exit 0
-              else
-                echo "❌ Invalid response: does not contain 'proxies:'"
-                cat clash_auto.yaml | head -n 10
-              fi
+          echo "💤 Waking up Render service..."
+          curl -s --connect-timeout 5 --max-time 10 "https://wyx.onrender.com/clash" > /dev/null || true
+          sleep 8
+
+      - name: Fetch and update Clash config
+        run: |
+          set -e
+          echo "➡️ Fetching Clash config from https://wyx.onrender.com/clash"
+          curl -f -s --max-time 60 -o clash_auto.yaml "https://wyx.onrender.com/clash"
+
+          if ! grep -q "^proxies:" clash_auto.yaml; then
+            echo "💥 Invalid config: missing 'proxies:' section"
+            exit 1
+          fi
+
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+          if ! git ls-files --error-unmatch clash_auto.yaml >/dev/null 2>&1; then
+            echo "🆕 Adding clash_auto.yaml for the first time"
+            git add clash_auto.yaml
+            git commit -m "🆕 feat: initial Clash config auto-added"
+            git push
+            echo "✅ Initial config pushed successfully"
+          else
+            if ! git diff --quiet --exit-code clash_auto.yaml; then
+              echo "🔄 Config changed — updating"
+              git add clash_auto.yaml
+              git commit -m "🔄 Auto-update Clash config [$(date -u +'%Y-%m-%d %H:%M UTC')]"
+              git push
+              echo "✅ Updated config pushed"
             else
-              echo "❌ curl failed (HTTP error or timeout)"
+              echo "ℹ️ No changes detected — skipping push"
             fi
+          fi            fi
             retry=$((retry + 1))
             if [ $retry -lt $max_retries ]; then
               sleep 10
