@@ -23,7 +23,7 @@ jobs:
           retry=0
           while [ $retry -lt $max_retries ]; do
             echo "  🔄 Attempt $((retry + 1))..."
-            if curl -f -s --max-time 30 -o clash_auto.yaml "https://wyx-production.up.railway.app/clash"; then
+            if curl -f -s --max-time 30 -o clash_auto.yaml "https://wyx.onrender.com/clash"; then
               # 检查是否是有效的 Clash YAML（必须包含 proxies）
               if grep -q "^proxies:" clash_auto.yaml; then
                 echo "✅ Valid Clash config received"
