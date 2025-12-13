@@ -2,7 +2,7 @@ name: 🔄 Auto Update Clash Config
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # UTC 0:00 = 北京 8:00
+    - cron: '0 0 * * *'  # UTC 0:00 = 北京时间 8:00
   workflow_dispatch:
 
 jobs:
@@ -14,21 +14,28 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: 🌐 Fetch Clash config
+      - name: 🌐 Fetch Clash config from Railway
         run: |
-          curl -f -s -o clash_auto.yaml "https://wyx-production.up.railway.app/clash"
+          echo "➡️ Fetching config from Railway..."
+          # 使用 -f 会因 500 报错退出，但我们显式处理
+          if ! curl -f -s -o clash_auto.yaml "https://your-project.up.railway.app/clash"; then
+            echo "❌ Failed to fetch config (HTTP error or empty response)"
+            exit 1
+          fi
 
-      - name: ✅ Commit and push if changed
+          # 检查是否是有效 YAML（至少包含 proxies）
+          if ! grep -q "proxies:" clash_auto.yaml; then
+            echo "❌ Invalid config: not a valid Clash YAML"
+            cat clash_auto.yaml  # 打印便于调试
+            exit 1
+          fi
+
+          echo "✅ Valid Clash config received"
+
+      - name: 📤 Commit and push
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-
-          # 仅当文件存在且有变更时提交
-          if [ -f clash_auto.yaml ] && ! git diff --quiet --exit-code clash_auto.yaml 2>/dev/null; then
-            git add clash_auto.yaml
-            git commit -m "🔄 Auto-update Clash config [$(date -u)]"
-            git push
-            echo "✅ Pushed new config"
-          else
-            echo "ℹ️ No changes or file missing"
-          fi
+          git add clash_auto.yaml
+          git commit -m "🔄 Auto-update Clash config [$(date -u)]" || echo "ℹ️ No changes to commit"
+          git push
