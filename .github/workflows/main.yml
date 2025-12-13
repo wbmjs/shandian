@@ -1,41 +1,59 @@
 name: 🔄 Auto Update Clash Config
 
 on:
+  # 每天 UTC 0:00 触发（北京时间 8:00）
   schedule:
-    - cron: '0 0 * * *'  # UTC 0:00 = 北京时间 8:00
+    - cron: '0 0 * * *'
+  # 允许手动触发（方便测试）
   workflow_dispatch:
 
 jobs:
-  update:
+  update-clash-config:
     runs-on: ubuntu-latest
     steps:
-      - name: 🛎️ Checkout code
+      - name: 🛎️ Checkout repository
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: 🌐 Fetch Clash config from Railway
+      - name: 🌐 Fetch Clash config from Railway (with retries)
         run: |
-          echo "➡️ Fetching config from Railway..."
-          # 使用 -f 会因 500 报错退出，但我们显式处理
-          if ! curl -f -s -o clash_auto.yaml "https://your-project.up.railway.app/clash"; then
-            echo "❌ Failed to fetch config (HTTP error or empty response)"
-            exit 1
-          fi
+          echo "➡️ Attempting to fetch config from Railway..."
+          max_retries=3
+          retry=0
+          while [ $retry -lt $max_retries ]; do
+            echo "  🔄 Attempt $((retry + 1))..."
+            if curl -f -s --max-time 30 -o clash_auto.yaml "https://wyx-production.up.railway.app/clash"; then
+              # 检查是否是有效的 Clash YAML（必须包含 proxies）
+              if grep -q "^proxies:" clash_auto.yaml; then
+                echo "✅ Valid Clash config received"
+                exit 0
+              else
+                echo "❌ Invalid response: does not contain 'proxies:'"
+                cat clash_auto.yaml | head -n 10
+              fi
+            else
+              echo "❌ curl failed (HTTP error or timeout)"
+            fi
+            retry=$((retry + 1))
+            if [ $retry -lt $max_retries ]; then
+              sleep 10
+            fi
+          done
+          echo "💥 All $max_retries attempts failed"
+          exit 1
 
-          # 检查是否是有效 YAML（至少包含 proxies）
-          if ! grep -q "proxies:" clash_auto.yaml; then
-            echo "❌ Invalid config: not a valid Clash YAML"
-            cat clash_auto.yaml  # 打印便于调试
-            exit 1
-          fi
-
-          echo "✅ Valid Clash config received"
-
-      - name: 📤 Commit and push
+      - name: 📤 Commit and push if changed
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add clash_auto.yaml
-          git commit -m "🔄 Auto-update Clash config [$(date -u)]" || echo "ℹ️ No changes to commit"
-          git push
+
+          # 检查文件是否存在且有变更
+          if [ -f clash_auto.yaml ] && ! git diff --quiet --exit-code clash_auto.yaml 2>/dev/null; then
+            git add clash_auto.yaml
+            git commit -m "🔄 Auto-update Clash config [$(date -u)]"
+            git push
+            echo "✅ New config pushed"
+          else
+            echo "ℹ️ No changes or file missing — nothing to commit"
+          fi
