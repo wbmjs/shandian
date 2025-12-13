@@ -54,26 +54,4 @@ jobs:
             else
               echo "ℹ️ No changes detected — skipping push"
             fi
-          fi            fi
-            retry=$((retry + 1))
-            if [ $retry -lt $max_retries ]; then
-              sleep 10
-            fi
-          done
-          echo "💥 All $max_retries attempts failed"
-          exit 1
-
-      - name: 📤 Commit and push if changed
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-
-          # 检查文件是否存在且有变更
-          if [ -f clash_auto.yaml ] && ! git diff --quiet --exit-code clash_auto.yaml 2>/dev/null; then
-            git add clash_auto.yaml
-            git commit -m "🔄 Auto-update Clash config [$(date -u)]"
-            git push
-            echo "✅ New config pushed"
-          else
-            echo "ℹ️ No changes or file missing — nothing to commit"
           fi
