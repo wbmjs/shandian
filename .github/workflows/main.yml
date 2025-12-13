@@ -16,7 +16,7 @@ jobs:
 
       - name: 🌐 Fetch Clash config
         run: |
-          curl -f -s -o clash_auto.yaml "https://your-project.up.railway.app/clash"
+          curl -f -s -o clash_auto.yaml "https://wyx-production.up.railway.app/clash"
 
       - name: ✅ Commit and push if changed
         run: |
