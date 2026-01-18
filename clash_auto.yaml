@@ -6,344 +6,360 @@ proxies:
     type: http
     server: 0dcd6041-t96tc0-te5mka-ai0d.bbfra.ukuaishou.com
     port: 443
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
+    tls: true
+
+  - name: "bbfra1"
+    type: http
+    server: ba81599f-t96740-te50ca-ai0d.bbfra.ukuaishou.com
+    port: 443
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "fmtai"
     type: http
     server: 9c584f3c-t96740-te50ca-ai0d.fmtai.cdntoutiao.com
     port: 32675
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "hk"
     type: http
-    server: 9d84ffac-t96740-te50ca-ai0d.hk.wkuaishou.com
+    server: e85c5380-t96tc0-te5mka-ai0d.hk.wkuaishou.com
     port: 5443
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "hk1"
     type: http
-    server: e85c5380-t96tc0-te5mka-ai0d.hk.wkuaishou.com
+    server: 9d84ffac-t96740-te50ca-ai0d.hk.wkuaishou.com
     port: 5443
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "hkt"
     type: http
     server: 7ca7bb21-t96tc0-te5mka-ai0d.hkt.s1xiaomiev.com
     port: 443
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "jp"
     type: http
-    server: 681b9d23-t96tc0-te5mka-ai0d.jp.wkuaishou.com
+    server: c646792b-t96740-te50ca-ai0d.jp.wkuaishou.com
     port: 5502
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "kr"
     type: http
-    server: 4afeeda3-t96tc0-te5mka-ai0d.kr.wkuaishou.com
+    server: 3e5fdae9-t96740-te50ca-ai0d.kr.wkuaishou.com
     port: 5503
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "laxdc2"
     type: http
     server: d2bc6c02-t96tc0-te5mka-ai0d.laxdc2.eumiui.com
     port: 443
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "payus"
     type: http
-    server: 60be6bc5-t96740-te50ca-ai0d.payus.ukuaishou.com
+    server: adda168e-t96tc0-te5mka-ai0d.payus.ukuaishou.com
     port: 443
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "proxy"
     type: http
     server: 762c8cbd-t96tc0-te5mka-ai0d.mi-imgs.com
     port: 443
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "sea"
     type: http
-    server: 481f0ee4-t96tc0-te5mka-ai0d.sea.cdntoutiao.com
+    server: f4eb7451-t96740-te50ca-ai0d.sea.cdntoutiao.com
     port: 2445
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "sea1"
     type: http
-    server: 51cb3a14-t96tc0-te5mka-ai0d.sea1.s34v2.com
+    server: f4eb7451-t96740-te50ca-ai0d.sea.cdntoutiao.com
     port: 443
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
+    tls: true
+
+  - name: "sea11"
+    type: http
+    server: 267dcebb-t96740-te50ca-ai0d.sea1.s34v2.com
+    port: 443
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "sea2"
     type: http
-    server: f4eb7451-t96740-te50ca-ai0d.sea.cdntoutiao.com
+    server: 481f0ee4-t96tc0-te5mka-ai0d.sea.cdntoutiao.com
     port: 2445
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "sea3"
     type: http
     server: 481f0ee4-t96tc0-te5mka-ai0d.sea.cdntoutiao.com
     port: 443
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "sea4"
     type: http
     server: 481f0ee4-t96tc0-te5mka-ai0d.sea.cdntoutiao.com
     port: 5678
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
-    tls: true
-
-  - name: "sea5"
-    type: http
-    server: f4eb7451-t96740-te50ca-ai0d.sea.cdntoutiao.com
-    port: 443
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "sg"
     type: http
-    server: 29003f16-t96740-te50ca-ai0d.sg.wkuaishou.com
+    server: 9741bf4a-t96tc0-te5mka-ai0d.sg.wkuaishou.com
     port: 5501
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "un1ock"
     type: http
     server: e1c4a5a6-t96tc0-te5mka-ai0d.un1ock.com
-    port: 6118
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    port: 1703
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "un1ock1"
     type: http
     server: e1c4a5a6-t96tc0-te5mka-ai0d.un1ock.com
-    port: 1682
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    port: 1681
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "un1ock10"
     type: http
     server: e1c4a5a6-t96tc0-te5mka-ai0d.un1ock.com
-    port: 6191
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    port: 6177
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "un1ock11"
     type: http
     server: e1c4a5a6-t96tc0-te5mka-ai0d.un1ock.com
-    port: 1703
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    port: 6186
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "un1ock12"
     type: http
     server: 6fafb3c8-t96740-te50ca-ai0d.un1ock.com
-    port: 1692
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    port: 1682
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "un1ock13"
     type: http
-    server: e1c4a5a6-t96tc0-te5mka-ai0d.un1ock.com
-    port: 1681
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    server: 6fafb3c8-t96740-te50ca-ai0d.un1ock.com
+    port: 1685
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "un1ock14"
     type: http
-    server: e1c4a5a6-t96tc0-te5mka-ai0d.un1ock.com
-    port: 6178
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    server: 6fafb3c8-t96740-te50ca-ai0d.un1ock.com
+    port: 1691
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "un1ock15"
     type: http
-    server: 6fafb3c8-t96740-te50ca-ai0d.un1ock.com
-    port: 6181
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    server: e1c4a5a6-t96tc0-te5mka-ai0d.un1ock.com
+    port: 1692
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "un1ock16"
     type: http
     server: e1c4a5a6-t96tc0-te5mka-ai0d.un1ock.com
-    port: 6181
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    port: 6192
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "un1ock17"
     type: http
-    server: e1c4a5a6-t96tc0-te5mka-ai0d.un1ock.com
-    port: 6187
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    server: 6fafb3c8-t96740-te50ca-ai0d.un1ock.com
+    port: 6185
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "un1ock18"
     type: http
     server: 6fafb3c8-t96740-te50ca-ai0d.un1ock.com
-    port: 1696
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    port: 1703
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "un1ock19"
     type: http
     server: e1c4a5a6-t96tc0-te5mka-ai0d.un1ock.com
-    port: 6177
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    port: 6118
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "un1ock2"
     type: http
     server: e1c4a5a6-t96tc0-te5mka-ai0d.un1ock.com
-    port: 6182
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    port: 6181
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "un1ock20"
     type: http
     server: e1c4a5a6-t96tc0-te5mka-ai0d.un1ock.com
-    port: 6186
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    port: 1682
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "un1ock21"
     type: http
-    server: 6fafb3c8-t96740-te50ca-ai0d.un1ock.com
-    port: 1686
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    server: e1c4a5a6-t96tc0-te5mka-ai0d.un1ock.com
+    port: 1688
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "un1ock22"
     type: http
-    server: e1c4a5a6-t96tc0-te5mka-ai0d.un1ock.com
-    port: 1692
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    server: 6fafb3c8-t96740-te50ca-ai0d.un1ock.com
+    port: 6178
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "un1ock23"
     type: http
     server: e1c4a5a6-t96tc0-te5mka-ai0d.un1ock.com
-    port: 6192
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    port: 6182
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "un1ock24"
     type: http
-    server: 6fafb3c8-t96740-te50ca-ai0d.un1ock.com
-    port: 1695
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    server: e1c4a5a6-t96tc0-te5mka-ai0d.un1ock.com
+    port: 1691
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "un1ock25"
     type: http
+    server: 6fafb3c8-t96740-te50ca-ai0d.un1ock.com
+    port: 6181
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
+    tls: true
+
+  - name: "un1ock26"
+    type: http
     server: e1c4a5a6-t96tc0-te5mka-ai0d.un1ock.com
-    port: 1704
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    port: 6188
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "un1ock3"
     type: http
-    server: 6fafb3c8-t96740-te50ca-ai0d.un1ock.com
-    port: 1682
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    server: e1c4a5a6-t96tc0-te5mka-ai0d.un1ock.com
+    port: 6187
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "un1ock4"
     type: http
-    server: e1c4a5a6-t96tc0-te5mka-ai0d.un1ock.com
-    port: 1691
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    server: 6fafb3c8-t96740-te50ca-ai0d.un1ock.com
+    port: 1686
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "un1ock5"
     type: http
-    server: 6fafb3c8-t96740-te50ca-ai0d.un1ock.com
-    port: 1688
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    server: e1c4a5a6-t96tc0-te5mka-ai0d.un1ock.com
+    port: 1696
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "un1ock6"
     type: http
-    server: e1c4a5a6-t96tc0-te5mka-ai0d.un1ock.com
-    port: 1685
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    server: 6fafb3c8-t96740-te50ca-ai0d.un1ock.com
+    port: 1692
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "un1ock7"
     type: http
-    server: e1c4a5a6-t96tc0-te5mka-ai0d.un1ock.com
-    port: 6188
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    server: 6fafb3c8-t96740-te50ca-ai0d.un1ock.com
+    port: 1695
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "un1ock8"
     type: http
     server: 6fafb3c8-t96740-te50ca-ai0d.un1ock.com
-    port: 1691
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    port: 1704
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
   - name: "un1ock9"
     type: http
     server: e1c4a5a6-t96tc0-te5mka-ai0d.un1ock.com
-    port: 6185
-    username: "1769321624@489901"
-    password: "2886c940b444067a9f28907b06923a6a"
+    port: 6191
+    username: "1769314407@489901"
+    password: "c5e204bf26b52f2fd544bd6c925ea1fd"
     tls: true
 
 proxy-groups:
@@ -351,6 +367,7 @@ proxy-groups:
     type: select
     proxies:
     - bbfra
+    - bbfra1
     - fmtai
     - hk
     - hk1
@@ -362,10 +379,10 @@ proxy-groups:
     - proxy
     - sea
     - sea1
+    - sea11
     - sea2
     - sea3
     - sea4
-    - sea5
     - sg
     - un1ock
     - un1ock1
@@ -386,6 +403,7 @@ proxy-groups:
     - un1ock23
     - un1ock24
     - un1ock25
+    - un1ock26
     - un1ock3
     - un1ock4
     - un1ock5
